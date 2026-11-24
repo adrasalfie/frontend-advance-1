@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Design tokens diambil dari mockup VideoBelajar */
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #fffcf5;
+  --color-ink: #222325;
+  --color-muted: #6b6b6b;
+  --color-line: #e8e6e0;
+
+  --color-primary: #3ecf4c;
+  --color-primary-dark: #2fb83d;
+  --color-primary-soft: #e8f9ea;
+
+  --color-brand-yellow: #ffbd3a;
+  --color-brand-orange: #f64920;
+  --color-danger: #f64920;
+}
+
+@layer base {
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
